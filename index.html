@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Kings League: MENA Edition</title>
+  <style>
+    html,body{margin:0;background:#0a0e1a;color:#fff;font-family:system-ui,Tahoma;overflow:hidden}
+    #game{width:100vw;height:100vh}
+    #touch-ui{position:fixed;inset:0;pointer-events:none;display:none}
+    body.coarse #touch-ui{display:block}
+    .stick{position:absolute;bottom:24px;left:24px;width:120px;height:120px;border:2px solid #00d4ff55;border-radius:50%;pointer-events:auto;touch-action:none}
+    .knob{position:absolute;width:52px;height:52px;background:#00d4ff88;border-radius:50%;left:34px;top:34px}
+    .btns{position:absolute;bottom:24px;right:24px;display:flex;gap:12px;pointer-events:auto}
+    .tbtn{width:72px;height:72px;border-radius:50%;border:2px solid #ffd700;background:#111a;border-color:#ffd700;color:#ffd700;font-weight:800;touch-action:none}
+    .tbtn.shoot{width:84px;height:84px}
+    .tbtn.card{position:fixed;top:76px;right:16px;width:60px;height:60px;box-shadow:0 0 18px #ffd700;animation:pulse 1.2s infinite}
+    @keyframes pulse{50%{box-shadow:0 0 32px #ffd700}}
+  </style>
+</head>
+<body>
+  <div id="game"></div>
+  <div id="touch-ui">
+    <div class="stick" id="stick"><div class="knob" id="knob"></div></div>
+    <div class="btns">
+      <button class="tbtn" id="btn-pass">PASS</button>
+      <button class="tbtn shoot" id="btn-shoot">SHOOT</button>
+    </div>
+    <button class="tbtn card" id="btn-card">🃏</button>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "leagues": [
+    {
+      "id": "mena", "name": "MENA Kings League", "icon": "🏆", "locked": false,
+      "pitchTheme": { "bg": "#0a0e1a", "neonPrimary": "#ffd700", "neonSecondary": "#00d4ff" },
+      "clubs": [
+        { "id": "sxb", "name": "SXB FC", "country": "SA", "president": { "name": "SHoNgxBoNg", "handle": "@shongxbong", "followersM": 27.6 }, "colors": { "primary": "#ffd700", "secondary": "#111111" }, "stats": { "pace": 82, "shoot": 85, "pass": 78, "def": 74, "gk": 80 }, "formation": "2-3-1", "secretCardBias": "shootout", "locked": false },
+        { "id": "abo", "name": "ABO FC", "country": "QA", "president": { "name": "AboFlah", "handle": "@aboflah" }, "colors": { "primary": "#00d4ff", "secondary": "#0a0e1a" }, "stats": { "pace": 80, "shoot": 83, "pass": 84, "def": 76, "gk": 79 }, "formation": "2-3-1", "locked": false },
+        { "id": "abs", "name": "3BS", "country": "JO", "president": { "name": "Absi", "coPresident": "Yazan Al-Naimat" }, "colors": { "primary": "#7c3aed", "secondary": "#0a0e1a" }, "stats": { "pace": 84, "shoot": 82, "pass": 81, "def": 78, "gk": 77 }, "formation": "2-3-1", "locked": false },
+        { "id": "dr7", "name": "DR7", "country": "SA", "president": { "name": "Drb7h", "titles": ["MENA Champion 2025"] }, "colors": { "primary": "#ff2a6d", "secondary": "#0a0e1a" }, "stats": { "pace": 88, "shoot": 86, "pass": 82, "def": 80, "gk": 84 }, "formation": "3-2-1", "locked": false },
+        { "id": "trb", "name": "TURBO", "country": "EG", "president": { "name": "Tarboun" }, "colors": { "primary": "#22c55e", "secondary": "#0a0e1a" }, "stats": { "pace": 90, "shoot": 80, "pass": 79, "def": 72, "gk": 75 }, "formation": "2-3-1", "locked": false },
+        { "id": "rdz", "name": "Red Zone", "country": "JO", "president": { "name": "Maherco", "coPresident": "Ali Olwan" }, "colors": { "primary": "#ef4444", "secondary": "#0a0e1a" }, "stats": { "pace": 81, "shoot": 84, "pass": 80, "def": 82, "gk": 81 }, "formation": "3-2-1", "locked": false }
+      ]
+    },
+    { "id": "spain", "name": "Spain Kings League", "icon": "🇪🇸", "locked": true, "unlockAt": "v2.0", "clubs": [] },
+    { "id": "americas", "name": "Americas Kings League", "icon": "🇲🇽", "locked": true, "unlockAt": "v2.1", "clubs": [] },
+    { "id": "worldcup", "name": "Kings World Cup", "icon": "🌍", "locked": true, "unlockAt": "v3.0", "clubs": [] }
+  ]
+}
