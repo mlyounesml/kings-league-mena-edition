@@ -2,7 +2,8 @@ import Phaser from 'phaser';
 import { GameManager, GameState } from '../core/GameStateMachine';
 import { InputManager } from '../systems/InputManager';
 import { formationSlots, isPassSafe } from '../systems/TeamAI';
-import { drawCard, canActivate, markUsed, TeamCardState, Card } from '../systems/SecretCardSystem';
+import { drawCard, canActivate, markUsed } from '../systems/SecretCardSystem';
+import type { TeamCardState, Card } from '../systems/SecretCardSystem';
 
 // Top-down arcade: circle players, ball with friction, kickoff run from goal lines.
 export class MatchLiveScene extends Phaser.Scene {
